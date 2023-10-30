@@ -7,4 +7,7 @@ def main(s1,s2):
     Returns:
         shortest string
     """
-    return
+    return s2 if len(s1)>len(s2) else s1
+s1="2223rfgvdsdf"
+s2="fgh"
+print(main(s1,s2))

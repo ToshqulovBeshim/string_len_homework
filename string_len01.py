@@ -6,4 +6,6 @@ def main(a):
     Returns:
         length of string
     """
-    return
+    return len(a)
+a='dfgbnmxcvbnmxcvb'
+print(main(a))

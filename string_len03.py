@@ -7,4 +7,7 @@ def main(a,b):
     Returns:
         True or False
     """
-    return
+    return True if len(a)==len(b) else False
+a="dfghjk"
+b="dfghjj"
+print(main(a,b))

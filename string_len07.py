@@ -8,4 +8,24 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    return
+    if len(s1)%2==1 and len(s2)%2==1 and len(s3)%2==1:
+        return [s1,s2,s3]
+    elif len(s1)%2==0 and len(s2)%2==1 and len(s3)%2==1:
+        return [s2,s3]
+    elif len(s1)%2==1 and len(s2)%2==0 and len(s3)%2==1:
+        return [s1,s3]
+    elif len(s1)%2==1 and len(s2)%2==1 and len(s3)%2==0:
+        return [s1,s2]
+    elif len(s1)%2==1 and len(s2)%2==0 and len(s3)%2==0:
+        return [s1]
+    elif len(s1)%2==0 and len(s2)%2==1 and len(s3)%2==0:
+        return [s2]
+    elif len(s1)%2==0 and len(s2)%2==0 and len(s3)%2==1:
+        return [s3]
+    else :
+        return []
+        
+s1="asdf"
+s2="sdi"
+s3="wefgf"
+print(main(s1,s2,s3))
